@@ -1,0 +1,29 @@
+/** Regular */
+@font-face {
+    font-family: "SF Pro";
+    font-weight: 400;
+    src: url("/webfont/SFPRODISPLAYREGULAR.woff2");
+}
+
+/** Medium */
+@font-face {
+    font-family: "SF Pro";
+    font-weight: 500;
+    src: url("/webfont/SFPRODISPLAYMEDIUM.woff2");
+}
+
+/** Bold */
+@font-face {
+    font-family: "SF Pro";
+    font-weight: 700;
+    src: url("/webfont/SFPRODISPLAYBOLD.woff2");
+}
+
+.radix-themes {
+    --default-font-family: 'SF Pro';
+    --heading-font-family: 'SF Pro';
+    --code-font-family: 'SF Pro';
+    --strong-font-family: 'SF Pro';
+    --em-font-family: 'SF Pro';
+    --quote-font-family: 'SF Pro';
+}
