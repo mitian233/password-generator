@@ -3,6 +3,7 @@ import {ClipboardCopyIcon, SymbolIcon} from '@radix-ui/react-icons';
 import {useState} from 'react';
 import CreateOne, {passType, passTypeList} from "~/methods/createOne";
 
+
 export default function PassBox() {
     const [value, setValue] = useState([15]);
     const handleValueChange = (e: Array<number>) => {
@@ -39,7 +40,7 @@ export default function PassBox() {
             <div className={'flex items-center gap-2'}>
                 <p>Length:</p>
                 <Slider value={value} onValueChange={handleValueChange} min={1} max={38}/>
-                <p>{value[0]}</p>
+                <p style={{width: '2em'}}>{value[0]}</p>
             </div>
 
             <TextField.Root size="3" placeholder="Created password" readOnly value={password}>
